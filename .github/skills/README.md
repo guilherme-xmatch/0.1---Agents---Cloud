@@ -21,6 +21,12 @@ Restricao estrutural importante:
 │   ├── SKILL.md
 │   ├── references/
 │   └── checklists/
+├── copilot-vscode-engenharia-agents/
+│   ├── SKILL.md
+│   ├── references/
+│   ├── checklists/
+│   ├── patterns/
+│   └── templates/
 ├── copilot-vscode-construtor-customizacoes/
 │   ├── SKILL.md
 │   ├── references/
@@ -57,6 +63,7 @@ Restricao estrutural importante:
 
 ### 2. Construcao e operacao
 
+- [copilot-vscode-engenharia-agents](./copilot-vscode-engenharia-agents/SKILL.md)
 - [copilot-vscode-construtor-customizacoes](./copilot-vscode-construtor-customizacoes/SKILL.md)
 - [copilot-vscode-orquestracao-subagents](./copilot-vscode-orquestracao-subagents/SKILL.md)
 - [copilot-vscode-mcp-governanca](./copilot-vscode-mcp-governanca/SKILL.md)
@@ -88,3 +95,5 @@ Restricao estrutural importante:
 - [Fontes e metodologia](../../docs/13-github-copilot-vscode-local/fontes-e-metodologia.md)
 - [Padroes comunitarios](../../docs/13-github-copilot-vscode-local/padroes-comunitarios.md)
 - [Playbook operacional](../../docs/13-github-copilot-vscode-local/playbook-operacional.md)
+- [Topologia de runtime e pastas](../../docs/13-github-copilot-vscode-local/topologia-de-runtime-e-pastas.md)
+- [Fleet de agents e handoffs](../../docs/13-github-copilot-vscode-local/fleet-de-agents-e-handoffs.md)

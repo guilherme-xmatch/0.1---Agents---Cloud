@@ -12,6 +12,12 @@ Use esta skill quando:
 - voce precisar informar contagens reais da pesquisa
 - a resposta precisar explicitar nivel de confianca
 
+Nao use esta skill quando:
+
+- o problema principal for escolher a superficie de configuracao correta, caso em que `copilot-vscode-arquitetura-local` e mais precisa
+- a tarefa for construir ou editar artefatos locais do repo
+- a pergunta for so benchmarking de exemplos publicos sem necessidade de ledger ou contagem rigorosa
+
 Fluxo de trabalho:
 
 1. Comece pelos artefatos locais de pesquisa, nao pela memoria ou por lembranca vaga.
@@ -29,6 +35,20 @@ Regras fortes:
 - Quando houver conflito entre comunidade e oficial, a documentacao oficial prevalece.
 - Se uma afirmacao critica depender de fonte unica ou de leitura parcial, marque isso como risco de confianca.
 - Nao trate popularidade comunitaria como prova de qualidade tecnica.
+
+Entradas que esta skill deve fixar antes de responder:
+
+1. a pergunta depende de data minima, volume minimo ou categoria minima de fonte?
+2. a conclusao precisa distinguir observacao local, documentacao oficial e comunidade?
+3. a resposta precisa de ledger completo ou so de base de evidencia resumida?
+
+Formato de saida recomendado:
+
+1. resposta curta
+2. base de evidencia
+3. conflitos e lacunas
+4. nivel de confianca
+5. contagem real, quando aplicavel
 
 Snapshot de referencia desta pesquisa:
 
@@ -49,3 +69,6 @@ Arquivos de apoio:
 - [Dossie principal](../../../docs/13-github-copilot-vscode-local/README.md)
 - [Fontes e metodologia](../../../docs/13-github-copilot-vscode-local/fontes-e-metodologia.md)
 - [Padroes comunitarios](../../../docs/13-github-copilot-vscode-local/padroes-comunitarios.md)
+- [README local](./README.md)
+- [Hierarquia de fontes](./references/hierarquia-de-fontes.md)
+- [Checklist de ledger e confianca](./checklists/ledger-e-confianca.md)

@@ -11,6 +11,12 @@ Use esta skill quando:
 - voce precisar comparar o repo atual com exemplos publicos
 - for necessario identificar se um padrao e maduro, emergente ou fragil
 
+Nao use esta skill quando:
+
+- a pergunta exigir predominancia de evidencia oficial e contagem auditavel como saida principal
+- o pedido for so escolher a arquitetura do repo sem benchmarking externo
+- a tarefa for editar diretamente o catalogo sem precisarmos comparar com sinais publicos
+
 Base desta skill:
 
 - 60 padroes analisados em detalhe
@@ -43,12 +49,14 @@ Regras fortes:
 
 Formato de saida recomendado:
 
-1. Padrao observado no repo atual.
-2. Parallelos comunitarios relevantes.
-3. Convergencia com orientacao oficial.
-4. Riscos e limitacoes.
-5. Recomendacao final.
+1. padrao observado
+2. analogos publicos relevantes
+3. convergencia com oficial
+4. julgamento de maturidade
+5. risco de copiar esse padrao sem adaptacao
 
 Arquivo de apoio principal:
 
 - [Padroes comunitarios](../../../docs/13-github-copilot-vscode-local/padroes-comunitarios.md)
+- [README local](./README.md)
+- [Sinais maduros e frageis](./references/sinais-maduros-e-frageis.md)

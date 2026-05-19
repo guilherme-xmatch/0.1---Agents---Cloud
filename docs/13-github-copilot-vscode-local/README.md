@@ -357,3 +357,5 @@ Divergências relevantes:
 - [Fontes e metodologia](./fontes-e-metodologia.md)
 - [60 padrões comunitários analisados](./padroes-comunitarios.md)
 - [Playbook operacional reutilizável](./playbook-operacional.md)
+- [Topologia de runtime e pastas](./topologia-de-runtime-e-pastas.md)
+- [Fleet de agents e handoffs](./fleet-de-agents-e-handoffs.md)

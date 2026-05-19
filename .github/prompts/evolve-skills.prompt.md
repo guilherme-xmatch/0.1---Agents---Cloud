@@ -90,6 +90,7 @@ Quando suspeitar que o produto mudou, ou quando o catalogo nao souber lidar com 
 - Nao introduza `.chatmode.md` novo; use `.agent.md`.
 - Nao trate `implement agent` como primitive oficial sem evidencia atual.
 - Nao confunda prompt file com policy persistente.
+- Nao aprofunde o primeiro nivel das superficies de runtime alem do formato canônico; concentre profundidade em docs, `README.md` e subpastas internas das skills.
 - Nao use memoria como substituto de artefato auditavel do repo.
 - Nao deixe hooks, MCP ou tool surfaces mais amplos do que o necessario.
 
@@ -110,6 +111,24 @@ Se o escopo for grande, use fan-out com subagents em trilhas separadas:
 - trilha 3: comunidade, repositorios publicos e sinais de naming/adocao
 
 Depois reconcilie as trilhas antes de editar.
+
+Quando os agents especializados deste repositorio estiverem disponiveis, prefira delegar assim:
+
+- arquitetura e fronteiras -> `copilot-vscode-arquiteto-configuracoes`
+- evidencia, contagem e conflitos -> `copilot-vscode-curador-evidencias`
+- criacao e endurecimento de `.agent.md` -> `copilot-vscode-engenheiro-agents`
+- construcao de artefatos -> `copilot-vscode-engenheiro-customizacoes`
+- runtime multiagente e handoffs -> `copilot-vscode-orquestrador-subagents`
+- MCP, approvals e blast radius -> `copilot-vscode-governador-mcp`
+- auditoria de setup -> `copilot-vscode-auditor-setup`
+- benchmarking comunitario -> `copilot-vscode-benchmark-comunidade`
+- rollout e ownership -> `copilot-vscode-planejador-rollout`
+
+Regra de orquestracao:
+
+- use no maximo 2 ou 3 especialistas por rodada
+- sempre reconcilie os outputs antes de editar
+- se houver conflito entre especialistas, faca prevalecer evidencia oficial e contexto local observavel
 
 ## Heuristicas de profundidade
 
@@ -152,6 +171,8 @@ Ao concluir, informe sempre:
 - [Fontes e metodologia](../../docs/13-github-copilot-vscode-local/fontes-e-metodologia.md)
 - [Padroes comunitarios](../../docs/13-github-copilot-vscode-local/padroes-comunitarios.md)
 - [Playbook operacional](../../docs/13-github-copilot-vscode-local/playbook-operacional.md)
+- [Topologia de runtime e pastas](../../docs/13-github-copilot-vscode-local/topologia-de-runtime-e-pastas.md)
+- [Fleet de agents e handoffs](../../docs/13-github-copilot-vscode-local/fleet-de-agents-e-handoffs.md)
 - [MCP local do workspace](../../.vscode/mcp.json)
 
 ## Modo de resposta esperado

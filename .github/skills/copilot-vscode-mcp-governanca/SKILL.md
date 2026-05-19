@@ -11,6 +11,12 @@ Use esta skill quando:
 - voce precisar revisar seguranca e governanca de tools
 - o repo tiver duvidas entre config compartilhado, pessoal, `.sample` ou `.template`
 
+Nao use esta skill quando:
+
+- o pedido ainda estiver no nivel de arquitetura geral, sem decisao de introduzir MCP ou rever approvals
+- a tarefa for apenas editar um prompt, instruction, skill ou agent sem tocar em integracao externa
+- a questao principal for rollout organizacional e ownership de fases
+
 Fatos verificados para aplicar:
 
 - `.vscode/mcp.json` e o lugar oficial para config compartilhado do workspace
@@ -37,6 +43,13 @@ Checklist de risco:
 4. o time sabe quem aprova o que?
 5. existe rollback simples se o MCP causar ruida ou comportamento indevido?
 
+Saida obrigatoria:
+
+1. decisao sobre config ativo, pessoal, `.sample` ou `.template`
+2. envelope de tools expostas
+3. politica de approvals e segredos
+4. owner, rollback e endurecimento recomendado
+
 Padroes recomendados:
 
 - um servidor por necessidade clara
@@ -48,3 +61,7 @@ Arquivos de apoio:
 - [Dossie principal](../../../docs/13-github-copilot-vscode-local/README.md)
 - [Playbook operacional](../../../docs/13-github-copilot-vscode-local/playbook-operacional.md)
 - [Padroes comunitarios](../../../docs/13-github-copilot-vscode-local/padroes-comunitarios.md)
+- [README local](./README.md)
+- [MCP compartilhado vs pessoal](./references/mcp-compartilhado-vs-pessoal.md)
+- [Checklist de approvals](./checklists/revisao-de-approvals.md)
+- [Template de decisao de MCP](./templates/mcp-governado.template.md)

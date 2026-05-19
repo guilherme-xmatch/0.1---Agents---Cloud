@@ -12,6 +12,12 @@ Use esta skill quando:
 - for necessario separar planner, researcher, implementer e reviewer
 - o usuario quiser handoffs claros entre agentes
 
+Nao use esta skill quando:
+
+- a tarefa puder ficar inteira em um unico agente ou prompt file
+- o problema principal for so escolher o mecanismo correto, sem necessidade de runtime multiagente
+- a equipe ainda nao definiu ownership minimo de arquivos e papeis
+
 Fatos verificados para usar:
 
 - subagents sao context-isolated e normalmente agent-initiated
@@ -46,6 +52,13 @@ Evite:
 - depender de nesting recursivo sem necessidade real
 - usar prompts vagos como substituto de contrato de saida
 
+Entradas minimas que esta skill deve determinar:
+
+1. quais subtarefas realmente precisam de contexto isolado
+2. quais papeis podem ser read-only
+3. qual output sintetico cada subagent deve devolver
+4. quais arquivos ou dominios precisam de ownership exclusivo
+
 Entregaveis esperados:
 
 - diagrama ou sequencia de handoffs
@@ -57,3 +70,7 @@ Arquivos de apoio:
 
 - [Dossie principal](../../../docs/13-github-copilot-vscode-local/README.md)
 - [Playbook operacional](../../../docs/13-github-copilot-vscode-local/playbook-operacional.md)
+- [README local](./README.md)
+- [Pattern plan research implement review](./patterns/plan-research-implement-review.md)
+- [Checklist de limites para subagents](./checklists/limites-de-subagents.md)
+- [Contratos de saida](./handoffs/contratos-de-saida.md)

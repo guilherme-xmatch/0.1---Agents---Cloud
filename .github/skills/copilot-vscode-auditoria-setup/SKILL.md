@@ -11,6 +11,12 @@ Use esta skill quando:
 - houver suspeita de excesso de contexto, tools demais ou conflito entre superficies
 - o repo precisar de um plano de saneamento
 
+Nao use esta skill quando:
+
+- o usuario ja souber exatamente o que quer construir e so faltar materializar os arquivos
+- a tarefa for essencialmente arquitetural e nao um review do estado atual
+- o pedido for apenas comparar o repo com a comunidade sem gerar findings de setup
+
 Fluxo de auditoria:
 
 1. Inventarie:
@@ -37,6 +43,13 @@ Anti-padroes a procurar:
 - memoria substituindo documentacao versionada do repo
 - multiplos agents editando os mesmos arquivos sem ownership claro
 
+Escala de severidade recomendada:
+
+- critica: risco de segredo, write access amplo demais, bypass approvals sem controle, blast radius de MCP excessivo
+- alta: sobreposicao forte entre superficies, hooks opacos, agents swiss-army
+- media: naming ruim, catalogo confuso, checklists fracos, falta de ownership
+- baixa: exemplos fracos, documentacao incompleta, redundancia toleravel
+
 Formato de saida recomendado:
 
 1. Findings principais.
@@ -50,3 +63,6 @@ Arquivos de apoio:
 - [Dossie principal](../../../docs/13-github-copilot-vscode-local/README.md)
 - [Padroes comunitarios](../../../docs/13-github-copilot-vscode-local/padroes-comunitarios.md)
 - [Playbook operacional](../../../docs/13-github-copilot-vscode-local/playbook-operacional.md)
+- [README local](./README.md)
+- [Checklist de setup](./checklists/checklist-de-setup.md)
+- [Template de relatorio de achados](./templates/relatorio-de-achados.template.md)
