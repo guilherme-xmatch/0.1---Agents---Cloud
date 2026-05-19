@@ -1,0 +1,11 @@
+{
+    "servers": {
+        "playwright-mcp": {
+            "args": [
+                "@tontoko/fast-playwright-mcp@latest"
+            ],
+            "command": "npx"
+        }
+    },
+    "inputs": []
+}

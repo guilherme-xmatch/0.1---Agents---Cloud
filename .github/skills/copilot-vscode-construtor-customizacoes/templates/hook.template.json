@@ -1,0 +1,7 @@
+{
+  "event": "PostToolUse",
+  "when": {
+    "tool": "edit"
+  },
+  "command": "npm run format -- --write"
+}

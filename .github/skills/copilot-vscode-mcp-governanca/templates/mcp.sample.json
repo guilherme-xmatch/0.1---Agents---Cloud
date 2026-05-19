@@ -1,0 +1,15 @@
+{
+  "inputs": [
+    {
+      "id": "api-token",
+      "type": "promptString",
+      "description": "Token do servico externo"
+    }
+  ],
+  "servers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@microsoft/mcp-server-playwright"]
+    }
+  }
+}
