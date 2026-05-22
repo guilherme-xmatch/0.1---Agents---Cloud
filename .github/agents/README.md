@@ -36,8 +36,13 @@ Esta pasta concentra os agents especializados do repositorio para GitHub Copilot
 
 ## Regra de especializacao
 
-- use [copilot-vscode-engenheiro-agents.agent.md](./copilot-vscode-engenheiro-agents.agent.md) quando o problema principal for criar, endurecer ou revisar um `.agent.md`
+- use [copilot-vscode-engenheiro-agents.agent.md](./copilot-vscode-engenheiro-agents.agent.md) quando o problema principal for desenhar, endurecer ou revisar o papel, o frontmatter e as fronteiras de um `.agent.md`
 - use [copilot-vscode-engenheiro-customizacoes.agent.md](./copilot-vscode-engenheiro-customizacoes.agent.md) para instructions, prompts, skills, hooks e customizacoes locais genericas
+
+Leitura pratica dessa fronteira:
+
+- o engenheiro de agents fecha papel, descricao, tools, modelo, handoffs e contrato de saida
+- o engenheiro de customizacoes materializa arquivos reais quando o desenho aprovado precisar editar o repositorio
 
 ## Fleet e handoffs
 

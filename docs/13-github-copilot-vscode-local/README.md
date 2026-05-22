@@ -13,6 +13,8 @@ Snapshot de pesquisa: 2026-05-19.
 | Documentação técnica oficial | 270 fontes utilizáveis | derivadas de 546 arquivos candidatos nos repositórios oficiais `microsoft/vscode-docs` e `github/docs`; 90 diretamente sobre customização local e 180 contextuais relevantes |
 | Medium com data verificável `>= 2026-04-01` | 75 posts | 37 diretos e 38 adjacentes; 0 datas não verificadas na coleta reproduzível |
 | Artefatos comunitários observados | 60 padrões analisados em detalhe | extraídos de pelo menos 230 artefatos `repo/path` visíveis nas primeiras páginas de 9 consultas públicas ao GitHub code search; soma bruta das consultas: 73.743 matches |
+| Fóruns e discussões `>= 2026-04-01` | 30 fontes | 17 threads do Hacker News, 10 GitHub Issues e 3 perguntas do Stack Overflow |
+| Sites especialistas e análises recentes | 20 fontes | 5 com data de página verificável e 15 ancoradas pela data verificável da thread pública recente que as circulou |
 
 Convenção de evidência usada neste módulo:
 
@@ -356,6 +358,9 @@ Divergências relevantes:
 
 - [Fontes e metodologia](./fontes-e-metodologia.md)
 - [60 padrões comunitários analisados](./padroes-comunitarios.md)
+- [Sinais avançados desde 2026-04-01](./sinais-avancados-desde-2026-04-01.md)
+- [Custom agents: leitura avançada desde 2026-04-01](./custom-agents-avancados-desde-2026-04-01.md)
+- [Handoffs: leitura avançada desde 2026-04-01](./handoffs-avancados-desde-2026-04-01.md)
 - [Playbook operacional reutilizável](./playbook-operacional.md)
 - [Topologia de runtime e pastas](./topologia-de-runtime-e-pastas.md)
 - [Fleet de agents e handoffs](./fleet-de-agents-e-handoffs.md)

@@ -6,7 +6,7 @@ Restricao estrutural importante:
 
 - a descoberta oficial de skills espera o formato `.github/skills/<nome-da-skill>/SKILL.md`
 - por isso, o primeiro nivel continua plano e composto apenas por skills reais
-- a elaboracao fica dentro de cada skill, com subpastas como `references/`, `checklists/`, `templates/` e `patterns/`
+- a elaboracao fica dentro de cada skill, com subpastas como `references/`, `checklists/`, `templates/`, `patterns/`, `examples/` e `troubleshooting/`
 
 ## Arquitetura da biblioteca
 
@@ -26,7 +26,9 @@ Restricao estrutural importante:
 │   ├── references/
 │   ├── checklists/
 │   ├── patterns/
-│   └── templates/
+│   ├── templates/
+│   ├── examples/
+│   └── troubleshooting/
 ├── copilot-vscode-construtor-customizacoes/
 │   ├── SKILL.md
 │   ├── references/
@@ -81,6 +83,8 @@ Restricao estrutural importante:
 - `checklists/`: listas operacionais e gates de validacao
 - `templates/`: esqueletos de artefatos para copiar e adaptar
 - `patterns/`: fluxos, sequencias e handoffs recorrentes
+- `examples/`: casos canonicos e comparacoes curtas antes/depois
+- `troubleshooting/`: falhas recorrentes e correcoes sem reabrir toda a arquitetura
 
 ## Regras de manutencao
 

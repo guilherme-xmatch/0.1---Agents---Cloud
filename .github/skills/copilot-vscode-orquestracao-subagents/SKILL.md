@@ -23,8 +23,10 @@ Fatos verificados para usar:
 - subagents sao context-isolated e normalmente agent-initiated
 - o agente principal precisa da tool `runSubagent` para invocar subagents
 - nested subagents exigem `setting(chat.subagents.allowInvocationsFromSubagents)`
+- nested subagents ainda podem apresentar rugosidade real de runtime; nao trate recursao como default seguro
 - custom agents podem rodar como subagents e sobrescrever model, tools e instrucoes herdadas
 - o Plan agent pode ser acessado por `/plan` e persiste `plan.md` em `/memories/session/plan.md`
+- custo, billing e modelo efetivo do worker podem divergir do que o frontmatter sugere; orchestrators precisam tratar isso como risco operacional
 
 Fluxo de desenho recomendado:
 
@@ -37,6 +39,7 @@ Fluxo de desenho recomendado:
    - resultado sintetico esperado na volta
 4. Use paralelismo apenas quando as subtarefas forem independentes.
 5. Defina handoffs e ownership de arquivo antes da fase de implementacao.
+6. Valide o output devolvido por cada worker antes de seguir para o proximo handoff.
 
 Padroes fortes:
 
@@ -64,6 +67,7 @@ Entregaveis esperados:
 - diagrama ou sequencia de handoffs
 - lista de agents/subagents envolvidos
 - modelo e tools por papel
+- riscos de nested invocation, billing ou approvals quando houver
 - criterios de aprovacao e validacao
 
 Arquivos de apoio:

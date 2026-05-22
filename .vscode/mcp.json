@@ -1,10 +1,15 @@
 {
     "servers": {
         "playwright-mcp": {
+            "command": "npx",
             "args": [
+                "-y",
                 "@tontoko/fast-playwright-mcp@latest"
-            ],
-            "command": "npx"
+            ]
+        },
+        "cloakbrowser": {
+            "command": "C:\\Users\\guilh\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\cloakbrowsermcp.exe",
+            "args": ["--caps", "all"]
         }
     },
     "inputs": []

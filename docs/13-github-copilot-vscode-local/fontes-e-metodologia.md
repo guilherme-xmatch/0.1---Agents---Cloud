@@ -62,6 +62,49 @@ Importante:
 - o número de 230 refere-se aos artefatos visíveis nas primeiras páginas coletadas das consultas, não ao universo total deduplicado dos 73.743 matches
 - as recomendações fortes foram ancoradas nos 60 padrões explicitamente analisados em [padroes-comunitarios.md](./padroes-comunitarios.md)
 
+### 2.4 Fóruns e discussões públicas `>= 2026-04-01`
+
+- fontes de forum/discussão usadas na ampliação deste módulo: 30
+- Hacker News: 17 threads
+- GitHub Issues: 10 discussões
+- Stack Overflow: 3 perguntas
+
+Critério de corte:
+
+- a data precisou ser verificável pela API pública da plataforma ou pelo endpoint individual da thread
+- discussões foram marcadas como `diretas` quando falavam explicitamente de GitHub Copilot local, agents, subagents, prompts, instructions, MCP ou comportamento do runtime no VS Code
+- discussões `adjacentes` foram aceitas quando o padrão era claramente reutilizável para chat agents, subagents, MCP ou workflows agenticos no editor
+
+Coleta reproduzível nesta sessão:
+
+- Hacker News via Algolia API (`search_by_date`)
+- GitHub Issues via GitHub REST API de issue individual
+- Stack Overflow via Stack Exchange API
+
+Ledger consolidado:
+
+- [Sinais avançados desde 2026-04-01](./sinais-avancados-desde-2026-04-01.md)
+
+### 2.5 Sites especialistas e análises recentes
+
+- fontes selecionadas: 20
+- com data de página verificável: 5
+- com data ancorada pela thread pública recente que as circulou: 15
+
+Regra de contagem usada:
+
+- quando a página expunha data por metadata, slug ou URL datada, a contagem usou a data da própria página
+- quando a página não expunha data confiável, a fonte não foi tratada como “publicação datada” e entrou apenas como fonte especializada surfacing em thread pública recente
+
+Método de descoberta:
+
+- seleção de links externos trazidos por threads públicas recentes do Hacker News
+- filtragem manual para remover self-posts, duplicatas óbvias e links sem utilidade para agents, subagents, skills, MCP, context engineering ou governança
+
+Ledger consolidado:
+
+- [Sinais avançados desde 2026-04-01](./sinais-avancados-desde-2026-04-01.md)
+
 ## 3. Shortlist oficial de alta prioridade
 
 As páginas abaixo são as mais estruturantes para arquitetura local, configuração, governança e operação no VS Code.
@@ -180,10 +223,14 @@ Decisão:
 2. A busca comunitária por GitHub code search foi amostrada pelas primeiras páginas de resultados de cada query; isso é suficiente para padrões, não para estatística exaustiva de adoção global.
 3. Alguns padrões comunitários foram inferidos a partir do caminho e do nome do artefato, não de leitura integral do conteúdo do arquivo; esses casos foram explicitamente marcados como `Inferência` na análise.
 4. Hooks no VS Code continuam em `Preview`; recomendações de rollout precisam considerar esse nível de maturidade.
+5. O recorte de sites especialistas usa uma mistura de datas de página e datas de circulação pública recente. Isso melhora a relevância prática, mas não equivale a um corpus inteiramente datado pela própria página.
 
 ## 8. Como reler este módulo com rigor
 
 - use [README.md](./README.md) para arquitetura e tradeoffs
 - use [padroes-comunitarios.md](./padroes-comunitarios.md) para exemplos públicos e convergências reais
+- use [sinais-avancados-desde-2026-04-01.md](./sinais-avancados-desde-2026-04-01.md) para a camada recente de fóruns, sites especialistas e sinais inovadores
+- use [custom-agents-avancados-desde-2026-04-01.md](./custom-agents-avancados-desde-2026-04-01.md) para a consolidação específica sobre custom agents, limites de runtime e backlog recomendado para a skill
+- use [handoffs-avancados-desde-2026-04-01.md](./handoffs-avancados-desde-2026-04-01.md) para a consolidação específica sobre handoffs, nested subagents, contratos de retorno e observabilidade do fluxo multiagente
 - use [playbook-operacional.md](./playbook-operacional.md) para implementação prática em time
 - use os manifestos JSON em `research/` quando quiser auditar a coleta ou expandir a amostra

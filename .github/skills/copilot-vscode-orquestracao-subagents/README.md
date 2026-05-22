@@ -20,3 +20,4 @@ Base externa principal:
 - [Dossie principal](../../../docs/13-github-copilot-vscode-local/README.md)
 - [Playbook operacional](../../../docs/13-github-copilot-vscode-local/playbook-operacional.md)
 - [Fleet de agents e handoffs](../../../docs/13-github-copilot-vscode-local/fleet-de-agents-e-handoffs.md)
+- [Handoffs: leitura avancada desde 2026-04-01](../../../docs/13-github-copilot-vscode-local/handoffs-avancados-desde-2026-04-01.md)
